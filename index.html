@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday 🤍</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    font-family:Poppins,sans-serif;
+    background:linear-gradient(135deg,#fff0f5,#ffe4ec,#f8e8ff);
+    color:#5a4050;
+    overflow-x:hidden;
+}
+
+/* HALAMAN PEMBUKA */
+
+#opening{
+    position:fixed;
+    inset:0;
+    z-index:100;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#fbc2d4,#f7d9ff);
+    transition:1s;
+}
+
+.open-box{
+    padding:30px;
+}
+
+.cake{
+    font-size:80px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+.open-box h1{
+    font-family:'Dancing Script',cursive;
+    font-size:50px;
+    color:#6b4056;
+    margin:15px 0;
+}
+
+.open-box p{
+    margin-bottom:25px;
+}
+
+button{
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    background:#d66b91;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    box-shadow:0 8px 25px rgba(214,107,145,.35);
+}
+
+/* WEBSITE */
+
+main{
+    display:none;
+    max-width:850px;
+    margin:auto;
+    padding:50px 20px;
+    text-align:center;
+}
+
+.title{
+    font-family:'Dancing Script',cursive;
+    font-size:70px;
+    color:#b74f78;
+}
+
+.subtitle{
+    margin-top:10px;
+    color:#806070;
+}
+
+/* FOTO */
+
+.photo-frame{
+    width:270px;
+    height:340px;
+    margin:40px auto 30px;
+    padding:10px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(120,70,100,.18);
+    transform:rotate(-2deg);
+}
+
+.photo-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:13px;
+}
+
+/* KARTU */
+
+.card{
+    background:rgba(255,255,255,.65);
+    backdrop-filter:blur(10px);
+    border-radius:25px;
+    padding:35px;
+    margin:30px auto;
+    max-width:700px;
+    box-shadow:0 15px 40px rgba(100,60,90,.1);
+}
+
+.card h2{
+    font-family:'Dancing Script',cursive;
+    font-size:38px;
+    color:#b74f78;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:2;
+    font-size:15px;
+}
+
+.big-cake{
+    font-size:75px;
+    margin:20px;
+    animation:bounce 1.5s infinite;
+}
+
+footer{
+    margin-top:50px;
+    font-size:13px;
+    opacity:.7;
+}
+
+.music{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:rgba(255,255,255,.8);
+    padding:12px 18px;
+    border-radius:50px;
+    font-size:13px;
+}
+
+/* LOVE */
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    animation:float 8s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.7;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* HP */
+
+@media(max-width:600px){
+
+    .title{
+        font-size:55px;
+    }
+
+    .open-box h1{
+        font-size:42px;
+    }
+
+    .card{
+        padding:25px 20px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- PEMBUKA -->
+
+<div id="opening">
+
+    <div class="open-box">
+
+        <div class="cake">
+            🎂
+        </div>
+
+        <h1>
+            Something Special For You
+        </h1>
+
+        <p>
+            Ada sedikit kejutan buat kamu... 🤍
+        </p>
+
+        <button onclick="openGift()">
+            Buka Kejutan 💌
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ISI WEBSITE -->
+
+<main id="main">
+
+    <div class="title">
+        Happy Birthday 🤍
+    </div>
+
+    <div class="subtitle">
+        Untuk seseorang yang spesial...
+    </div>
+
+
+    <!-- FOTO -->
+
+    <div class="photo-frame">
+
+        <img src="foto.jpg">
+
+    </div>
+
+
+    <!-- UCAPAN -->
+
+    <div class="card">
+
+        <h2>
+            Happy Birthday, kamu ✨
+        </h2>
+
+        <p>
+
+            Hari ini adalah hari spesial karena seseorang
+            yang begitu berarti dilahirkan ke dunia.
+
+            <br><br>
+
+            Semoga di umur yang baru ini,
+            semua hal baik datang menghampiri kamu.
+
+            Semoga langkah kamu selalu dimudahkan,
+            rezekinya dilancarkan,
+            dan senyum kamu selalu punya alasan
+            untuk tetap ada. 🤍
+
+            <br><br>
+
+            Jangan pernah berhenti jadi diri kamu sendiri,
+            karena kamu sudah cukup berharga
+            dengan menjadi diri kamu.
+
+            <br><br>
+
+            Sekali lagi...
+
+            <br>
+
+            <b>Happy Birthday 🎂💐</b>
+
+            <br><br>
+
+            Semoga hari ini menjadi salah satu
+            hari yang paling indah buat kamu.
+
+        </p>
+
+    </div>
+
+
+    <div class="big-cake">
+        🎂
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            A Little Wish For You 🌷
+        </h2>
+
+        <p>
+
+            I hope you get everything you've been
+            silently praying for.
+
+            <br><br>
+
+            Semoga tahun ini membawa lebih banyak
+            kebahagiaan, cerita indah,
+            orang-orang baik,
+            dan alasan untuk tersenyum.
+
+            <br><br>
+
+            <i>
+                You deserve beautiful things. 🤍
+            </i>
+
+        </p>
+
+    </div>
+
+
+    <footer>
+        Made with 🤍 just for you
+    </footer>
+
+</main>
+
+
+<!-- LAGU -->
+
+<audio id="music" loop>
+
+    <source src="lagu.mp3" type="audio/mpeg">
+
+</audio>
+
+
+<div class="music">
+    🎵 Birthday Song
+</div>
+
+
+<script>
+
+function openGift(){
+
+    document.getElementById("opening").style.opacity="0";
+
+    setTimeout(function(){
+
+        document.getElementById("opening").style.display="none";
+
+        document.getElementById("main").style.display="block";
+
+    },900);
+
+
+    let music=document.getElementById("music");
+
+    music.volume=0.5;
+
+    music.play();
+
+
+    createHearts();
+
+}
+
+
+function createHearts(){
+
+    setInterval(function(){
+
+        let heart=document.createElement("div");
+
+        heart.className="heart";
+
+        let hearts=["🤍","💗","💕","🌸","✨"];
+
+        heart.innerHTML=
+            hearts[Math.floor(Math.random()*hearts.length)];
+
+        heart.style.left=
+            Math.random()*100+"vw";
+
+        heart.style.animationDuration=
+            (5+Math.random()*5)+"s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(function(){
+
+            heart.remove();
+
+        },10000);
+
+    },600);
+
+}
+
+</script>
+
+</body>
+</html>
